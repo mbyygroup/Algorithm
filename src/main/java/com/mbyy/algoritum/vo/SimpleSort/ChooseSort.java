@@ -7,8 +7,9 @@ import com.mbyy.algoritum.vo.Array.HighArray;
 public class ChooseSort {
 
     static HighArray highArray=new HighArray(20);   //这里操作自己实现的数组
-    static int nElems;
+    static int nElems,i;
     public static void main(String[] args) {
+        while (i<nElems)
         highArray.insert(3);
         highArray.insert(233);
         highArray.insert(354);
