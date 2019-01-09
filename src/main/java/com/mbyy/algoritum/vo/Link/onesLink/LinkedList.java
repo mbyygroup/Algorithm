@@ -64,4 +64,18 @@ public class LinkedList {
         }
         return current;
     }
+
+
+    //对迭代器优化适配
+    public Link getFirst(){
+        return first;
+    }
+
+    public void setFirst(Link f){
+        first=f;
+    }
+
+    public ListIterator getIterator(){
+        return new ListIterator(this);
+    }
 }

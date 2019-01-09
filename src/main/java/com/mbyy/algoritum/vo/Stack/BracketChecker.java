@@ -64,4 +64,15 @@ public class BracketChecker {
             System.out.println("Error:missing right");
         }
     }
+
+    //高级算法
+    public boolean isValid(String input){
+        int length;
+        do {
+            length=input.length();
+            input=input.replace("{}","").replace("()","").replace("[]","");
+        }while (length!=input.length());
+        return input.length()==0;
+    }
+
 }

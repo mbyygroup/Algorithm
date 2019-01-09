@@ -22,8 +22,8 @@ public class StackApp {
                 break;
             }
             BracketChecker theChecker = new BracketChecker(input);
-            theChecker.check();
-
+//            theChecker.check();
+            System.out.println(theChecker.isValid(input));
         }
     }
     public static String getString() throws IOException{
