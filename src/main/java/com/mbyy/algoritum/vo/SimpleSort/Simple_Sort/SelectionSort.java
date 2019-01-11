@@ -1,4 +1,4 @@
-package com.mbyy.algoritum.common.Simple_Sort;
+package com.mbyy.algoritum.vo.SimpleSort.Simple_Sort;
 
 /*
  * 直接选择排序
