@@ -23,6 +23,7 @@ public class Tree {
     }
 
     public void insert(int id,double dd){
+        //避免重复关键字
         Node newNode=new Node();
         newNode.iData=id;
         newNode.dData=dd;
