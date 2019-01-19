@@ -1,5 +1,6 @@
 package com.mbyy.algoritum.vo.HashTable;
 
+//开放地址法实现哈希表
 public class HashTable {
     private DataItem[] hashArray;
     private int arraySize;

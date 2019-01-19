@@ -1,23 +1,28 @@
 package com.mbyy.algoritum.vo.HashTable;
 
+import com.mbyy.algoritum.vo.HashTable.Link;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class App {
     public static void main(String[] args) throws IOException {
-        DataItem aDataItem;
-        int aKey,size,n,keysPerCell;
+//        DataItem aDataItem;
+        Link aDataItem;
+//        int aKey,size,n,keysPerCell;
+        int aKey,size,n,keysPerCell=100;
         System.out.println("Enter size of hash table: ");
         size=getInt();
         System.out.println("Enter initial number of items: ");
         n=getInt();
-        keysPerCell=10;
-        HashTable theHashTable=new HashTable(size);
+//        keysPerCell=10;
+        HashTable2 theHashTable=new HashTable2(size);
         for (int j = 0; j <n ; j++) {
             aKey= (int) (Math.random()*keysPerCell*size);
-            aDataItem=new DataItem(aKey);
-            theHashTable.insert(aKey,aDataItem);
+            aDataItem=new Link(aKey);
+//            theHashTable.insert(aKey,aDataItem);
+            theHashTable.insert(aDataItem);
         }
         while (true){
             System.out.println("Enter first letter of ");
@@ -30,8 +35,9 @@ public class App {
                 case 'i':
                     System.out.println("Enter key value to insert: ");
                     aKey=getInt();
-                    aDataItem=new DataItem(aKey);
-                    theHashTable.insert(aKey,aDataItem);
+                    aDataItem=new Link(aKey);
+//                    theHashTable.insert(aKey,aDataItem);
+                    theHashTable.insert(aDataItem);
                     break;
                 case 'd':
                     System.out.println("Enter key value to delete: ");
