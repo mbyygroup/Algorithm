@@ -16,9 +16,9 @@ public class App {
     public static void heapSort() throws IOException {
         int size,j;
         System.out.println("Enter number of items: ");
-        size=getInt();
-        Heap theHeap=new Heap(size);
-        for (j = 0; j < size; j++) {
+        size=getInt();       //获取要创建的数组的大小
+        Heap theHeap=new Heap(size);   //创建新数组
+        for (j = 0; j < size; j++) {     //循环创建随机数
             int random=(int)(Math.random()*100);
             Node newNode=new Node(random);
             theHeap.insertAt(j,newNode);
